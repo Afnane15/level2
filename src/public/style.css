@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  form {
+    max-width: 400px;
+    margin: auto;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #00796b ;
+    border-radius: 4px;
+  }
+  button {
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #014d44;
+  }
+
+  .list-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  /* Styling unordered list */
+  ul.styled-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+  }
+
+  ul.styled-list p {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    background-color: #e0f7fa;
+    border: 1px solid #b2ebf2;
+    color: #00796b;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
+  ul.styled-list li::before {
+    content: "✔"; /* Add a custom bullet */
+    margin-right: 10px;
+    color: #004d40;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #00796b;
+    padding: 10px 10px;
+    color: white;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4;
+  }
+  

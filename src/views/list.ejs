@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>My notes</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/style.css">
+  
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="/add">Create</a></li>
+          <li><a href="/list">List</a></li>
+    
+        </ul>
+      </nav>
+<div class="list-container">
+    <h1>My notes</h1>
+    <ul class="styled-list">
+        <% if(item.length>0){ %>
+        <% item.forEach((it) => { %>
+       <li><%=it.title%></li>
+       <p><%=it.body%></p>
+       <%} )%>
+        <%}%>
+    </ul>
+        
+</div>   
+</body>
+</html>
