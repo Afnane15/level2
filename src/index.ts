@@ -29,13 +29,13 @@ app.get("/add", (_req: Request, res: Response) => {
   res.render("add"); 
 });
 
-// Route pour soumettre un nouvel utilisateur
+
 app.post("/add", async (req: Request, res: Response) => {
   try {
     const db = await connectDB();
     const { title, body } = req.body;
     await createNote(db, { title, body });
-    res.redirect("/list"); // Redirige vers la page d'accueil après l'insertion
+    res.redirect("/list"); 
   } catch (error) {
     res.status(500).send("Erreur lors de la création.");
   }
