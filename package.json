@@ -1,20 +1,17 @@
 {
   "dependencies": {
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.10.2",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
-    "mongoose": "^8.9.2",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.7.2"
+    "express-validator": "^7.2.0",
+    "nodemon": "^3.1.9"
   },
-  "name": "level2_week1",
+  "name": "level2_week2",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "app.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "build": "tsc",
-    "dev": "ts-node-dev src/index.ts"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
